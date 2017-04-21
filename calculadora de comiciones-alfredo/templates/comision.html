@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Empresa:ABC S.A.</title>
+</head>
+<link rel="shortcut icon" type="image/x-icon" href="../static/favicon.ico"/>
+<body bgcolor="#B222E6">
+<h1 style="text-align: center;">CALCULADORA</h1>
+
+
+<h3>la comicion es de:</h3>
+</caption>
+<tbody>
+<tr>
+<td>&nbsp;Nombre:</td>
+<td>&nbsp;{{nom}}</td>
+</tr>
+<tr>
+<td>&nbsp;Apellido:</td>
+<td>&nbsp;{{ape}}</td>
+</tr>
+<tr>
+<td>&nbsp;Ventas:</td>
+<td>&nbsp;$ {{ven}}</td>
+</tr>
+<tr>
+<td>&nbsp;Comision ({{por}}%):</td>
+<td>&nbsp;$ {{com}}</td>
+</tr>
+</tbody>
+</table>
+{% if com == 0 %}
+<h3 style="text-align: center;"><span style="color: #C0392B ;">No tuviste ventas?!&nbsp;</span></h3>
+
+{% endif %}
+<form action="http://localhost:5000/" method="GET">
+        <p style="text-align: center;"> <input type="submit" VALUE="ingresar nuevos valores"></p>
+</form>
+</body>
+</html>
